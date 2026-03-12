@@ -15,14 +15,13 @@ from dataclasses import dataclass
 from dataclasses import field as dataclass_field
 from typing import Any, Callable, ClassVar, TypeVar
 
-from griot_core import QualityRule
 from griot_core._utils import (
     extract_base_type,
     is_optional_type,
     logical_type_to_python,
     python_type_to_logical,
 )
-from griot_core.types import DataType, PIIType, PrivacyInfo, Sensitivity
+from griot_core.types import DataType, PIIType, PrivacyInfo, QualityRule, Sensitivity
 from griot_core.types import PrivacyInfo as PI
 
 __all__ = [
